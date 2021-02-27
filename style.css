@@ -12,11 +12,11 @@ h5 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 64px;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 36px;
 }
 
 h3 {
@@ -28,7 +28,7 @@ h4 {
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 p {
@@ -44,9 +44,10 @@ nav {
   width: 100%;
   height: 65px;
   justify-content: space-between;
-  background-color: grey;
   align-content: center;
   align-content: center;
+  position: fixed;
+  z-index: 2;
 }
 
 nav p,
@@ -84,4 +85,77 @@ li {
   color: white;
   list-style-type: none;
   font-style: normal;
+}
+
+/* --------Banner---------- */
+.main-banner {
+  width: 100%;
+  height: 606px;
+  background-image: url(./Images/Main\ Banner.png);
+  background-size: cover;
+  justify-self: center;
+}
+
+.headline {
+  position: absolute;
+  color: rgba(247, 239, 239, 0.975);
+  left: 417px;
+  top: 254px;
+}
+
+.headline p {
+  text-align: center;
+}
+
+.main-banner-overlay {
+  width: 100%;
+  height: 605px;
+  background: #000;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.about {
+  text-align: center;
+  width: 940px;
+  margin: auto;
+  padding: 73px 0;
+}
+
+.about img {
+  padding: 20px;
+}
+
+.nutshell {
+  text-align: center;
+  justify-content: center;
+  width: 934px;
+  margin: auto;
+  background-color: rgba(196, 196, 196, 26%);
+  margin-bottom: 73px;
+}
+
+.nutbox {
+  margin: auto:
+  width: 934px;
+  justify-content: space-evenly;
+}
+
+
+.nut {
+    display: block;
+}
+
+.what-i-do {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 629px;
+    margin: auto;
+    background-color: rgba(196, 196, 196, 26%);
+    margin-bottom: 73px;
+}
+
+.what-i-do h2 {
+    padding: 61px 0 32px 0;
 }
