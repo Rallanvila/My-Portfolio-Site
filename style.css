@@ -159,3 +159,7 @@ li {
 .what-i-do h2 {
     padding: 61px 0 32px 0;
 }
+
+.what-i-do p {
+    width: 312px;
+}
