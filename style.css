@@ -33,6 +33,7 @@ h5 {
 
 p {
   font-family: "Zilla Slab", serif;
+  line-height: 25px;
 }
 
 .flex-container {
@@ -114,7 +115,7 @@ li {
   opacity: 0.3;
   position: absolute;
 }
-
+/* ---------About--------- */
 .about {
   text-align: center;
   width: 940px;
@@ -130,9 +131,14 @@ li {
   text-align: center;
   justify-content: center;
   width: 934px;
+  height: 256px;
   margin: auto;
   background-color: rgba(196, 196, 196, 26%);
   margin-bottom: 73px;
+}
+
+.nutshell h2 {
+  padding-top: 20px;
 }
 
 .nutbox {
