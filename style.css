@@ -225,11 +225,11 @@ li {
 .resume {
   background-image: url(./Images/Resume\ Banner\ 1.png);
   width: 100%;
-  height: 304px;
+  height: 394px;
   background-position: center;
   text-align: center;
   align-content: center;
-
+  margin-bottom: 85px;
 }
 
 .resume h2, p {
@@ -262,5 +262,9 @@ li {
   position: absolute;
 }
 
+.what-ive-done {
+  text-align: center;
+  height: 800px;
+}
 
 
