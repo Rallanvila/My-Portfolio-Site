@@ -247,17 +247,23 @@ li {
   width: 420px;
   margin: auto;
 }
-.resume p {
+
+.resume-header h2 {
+  padding-bottom: 20px;
+}
+
+.resume-header p {
   border: 2px solid white;
   width: 97px;
   padding: 10px;
-  border-radius: 10px
-  color: white;
+  margin: 20px;
+  border-radius: 10px;
   margin: auto
 }
 
-.resume-header h2, p {
+.resume-header {
   z-index: 2;
+  color: white;
 }
 
 .resume-overlay {
