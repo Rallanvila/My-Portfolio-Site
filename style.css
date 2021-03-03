@@ -48,6 +48,7 @@ nav {
   align-content: center;
   align-content: center;
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.906);
   z-index: 2;
 }
 
@@ -167,7 +168,7 @@ li {
 }
 
 .what-i-do p {
-    width: 312px;
+    width: 335px;
     padding: 8px;
 }
 
