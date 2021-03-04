@@ -1,6 +1,7 @@
 gsap.to(".headline", {
     duration: 3, 
-    x: 200,
+    x: 400,
+    ease: "back",
 })
 
 gsap.from(".headline", {
@@ -22,12 +23,47 @@ gsap.from(".about", {
     }
 })
 
-gsap.from(".do-img", {
+gsap.from(".what-i-do", {
     scrollTrigger: {
-        trigger: ".do-img",
+        trigger: ".what-i-do",
+        start: "top center",
+        marker: true,
+    },
+    duration: 1,
+    opacity: 0,
+    stagger: .2,
+    x: -15,
+})
+
+gsap.from(".competencies", {
+    scrollTrigger: {
+        trigger: ".competencies",
+        start: "top center"
+    },
+    duration: 2,
+    opacity: 0,
+    stagger: .2,
+    x: -15,
+})
+
+gsap.from(".experience", {
+    scrollTrigger: {
+        trigger: ".experience",
         start: "top center"
     },
     duration: 2,
     opacity: 0,
     stagger: .5,
+})
+
+gsap.from(".fab", {
+    scrollTrigger: {
+        trigger: ".fab",
+        start: "top center"
+    },
+    duration: 1,
+    opacity: 0,
+    stagger: .4,
+    y: -150,
+    ease: "back"
 })
