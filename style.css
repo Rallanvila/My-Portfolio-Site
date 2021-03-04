@@ -39,6 +39,7 @@ p {
 .flex-container {
   display: flex;
   align-self: center;
+  align-content: center;
 }
 /* ----------Nav Bar--------- */
 nav {
@@ -92,17 +93,20 @@ li {
 /* --------Banner---------- */
 .main-banner {
   width: 100%;
-  height: 606px;
-  background-image: url(./Images/Main\ Banner.png);
+  height: 80vh;
+  background-image: url(./Images/Banner4.jpg);
   background-size: cover;
   justify-self: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .headline {
   position: absolute;
   color: rgba(247, 239, 239, 0.975);
-  left: 417px;
-  top: 254px;
+  left: 40vh;
+  top: 35vh;
 }
 
 .headline p {
@@ -111,22 +115,39 @@ li {
 
 .main-banner-overlay {
   width: 100%;
-  height: 605px;
+  height: 80vh;
   background: #000;
   opacity: 0.3;
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 /* ---------About--------- */
 .about {
-  text-align: center;
   width: 940px;
   margin: auto;
-  padding: 73px 0;
+  /* padding: 73px 0; */
+  height: 80vh;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.center {
+  padding: 5vh 0;
+  justify-content: center;
+  text-align: center;
+  height: 772px;
+  margin: auto;
+  align-items: center;
+
 }
 
 .about img {
   padding: 20px;
 }
+
 
 .nutshell {
   text-align: center;
@@ -135,11 +156,11 @@ li {
   height: 256px;
   margin: auto;
   background-color: rgba(196, 196, 196, 26%);
-  margin-bottom: 73px;
+  margin: 73px 0 0 0;
 }
 
 .nutshell h2 {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .nutbox {
@@ -152,12 +173,18 @@ li {
 .nut {
     display: block;
 }
+
+.nut img {
+  padding: 10px;
+}
+
 /* -----------What I Do---------- */
 .what-i-do {
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 629px;
+    height: 70vh;
+    /* height: 629px; */
     margin: auto;
     background-color: rgba(196, 196, 196, 26%);
     margin-bottom: 73px;
