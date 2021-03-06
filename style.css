@@ -131,7 +131,6 @@ li {
 .about {
   width: 940px;
   margin: 10vh auto 10vh auto;
-  /* padding: 73px 0; */
   height: 80vh;
   justify-content: center;
   justify-self: center;
@@ -186,7 +185,7 @@ li {
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     background-color: rgba(196, 196, 196, 26%);
 }
 
@@ -220,6 +219,7 @@ li {
 .experience {
   text-align: center;
   height: 40vh;
+  margin-top: 5vh;
 }
 
 .experience p {
@@ -424,7 +424,7 @@ li {
   .experience p {
     width: 90%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     padding: 50px auto 30px auto;
   }
   
