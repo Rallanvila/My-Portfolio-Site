@@ -366,8 +366,10 @@ li {
   .headline {
     left: 0;
     padding: 0;
+    justify-content: center;
+    text-align: center;
   }
-
+  /* ----------about--------------- */
   .about {
     width: 100%;
     margin: 10px 5px;
@@ -418,7 +420,7 @@ li {
   .experience h2 {
     padding: 20px;
   }
-  
+  /* --------experience----------- */
   .experience p {
     width: 90%;
     text-align: center;
