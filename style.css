@@ -265,6 +265,14 @@ li {
   color: linear-gradient(180deg, #EB4A1C 0%, #9D56F8 50%, #0EC981 100%);
 }
 
+footer {
+  justify-content: center;
+}
+
+footer img {
+  padding: 100px 20px;
+}
+
 /* ---------Resume----------- */
 .resume {
   background-image: url(./Images/Resume2.jpg);
