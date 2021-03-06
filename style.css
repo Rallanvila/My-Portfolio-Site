@@ -357,32 +357,34 @@ html {
 .projects {
   display: flex;
   width: 90%;
+  height: 350px;
   margin: 0 auto;
   text-align: center;
   justify-content: space-evenly;
 }
 
 .project img {
-  width: 70vh;
+  width: 500px;
 }
 
 .project {
-  width: 70vh;
+  width: 500px;
   padding: 1vh;
+  margin: 2vh;
   background: #fff;
   position: relative;
   display: flex;
   align-items: flex-end;
   transition: 0.6s ease-out;
   text-align: left;
-  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 10); */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 }
 
 .project:hover {
-  transform: translateY(10px);
+  transform: translateY(3px);
 }
 .project:hover:before {
-  opacity: .7;
+  opacity: .8;
 }
 
 .project:hover .project-text {
@@ -422,8 +424,11 @@ html {
   transition: 0.5s;
 }
 
+.project-text h5 {
+  padding: 10px;
+}
 .project-text a{
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px;
 }
 /* --------------------mobile-------------------- */
