@@ -24,7 +24,7 @@ h3 {
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 36px;
 }
 
 h5 {
@@ -45,6 +45,8 @@ section{
   align-self: center;
   align-content: center;
 }
+
+
 /* ----------Nav Bar--------- */
 nav {
   width: 100%;
@@ -236,7 +238,7 @@ li {
   85px 100px;
 }
 
-.fab {
+.skills .fab {
   font-size: 90px;
   color: rgba(0, 0, 0, 90%)
 }
@@ -324,9 +326,107 @@ footer img {
 
 .what-ive-done {
   text-align: center;
-  height: 800px;
 }
 
+/* .what-ive-done p {
+  padding-bottom: 5vh;
+} */
+
+/* -------------projects---------------- */
+/* .projects {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-evenly;
+} */
+
+.projects img {
+  width: 70vh;
+}
+
+/* ------------project-hover-overlay------------ */
+
+/* body,
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  width: 100%;
+  height: 100%;
+} */
+.projects {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.project img {
+  width: 70vh;
+}
+
+.project {
+  width: 70vh;
+  padding: 1vh;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s ease-out;
+  text-align: left;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 10); */
+}
+
+.project:hover {
+  transform: translateY(10px);
+}
+.project:hover:before {
+  opacity: .7;
+}
+
+.project:hover .project-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, transparent);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.project .project-text {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+.project-text a{
+  font-size: 30px;
+  padding: 10px;
+}
+/* --------------------mobile-------------------- */
 
 @media only screen and (min-width: 400px) and (max-width: 501px) {
   nav {
