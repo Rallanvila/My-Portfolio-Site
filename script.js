@@ -1,3 +1,18 @@
+window.addEventListener('resize', function(){
+    if(window.innerWidth > 550 {
+        gsap.to(".headline", {
+            duration: 3, 
+            x: 400,
+            ease: "back",
+        })
+        
+        gsap.from(".headline", {
+            opacity: 0, 
+            duration: 4
+        })
+    })
+})
+
 gsap.to(".headline", {
     duration: 3, 
     x: 400,
@@ -63,7 +78,7 @@ gsap.from(".fab", {
     },
     duration: 1,
     opacity: 0,
-    stagger: .4,
+    stagger: .2,
     y: -150,
     ease: "back"
 })
