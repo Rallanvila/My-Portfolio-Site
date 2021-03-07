@@ -56,7 +56,7 @@ nav {
   align-content: center;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.906);
-  z-index: 2;
+  z-index: 10;
 }
 
 nav p,
@@ -263,16 +263,12 @@ li {
   color: rgba(89, 150, 86, 100%)
 }
 
+.fa-github:hover {
+  color: #6A2B86;
+}
+
 .fa-figma:hover {
-  color: linear-gradient(180deg, #EB4A1C 0%, #9D56F8 50%, #0EC981 100%);
-}
-
-footer {
-  justify-content: center;
-}
-
-footer img {
-  padding: 100px 20px;
+  color: #F96E60
 }
 
 /* ---------Resume----------- */
@@ -328,32 +324,12 @@ footer img {
   text-align: center;
 }
 
-/* .what-ive-done p {
-  padding-bottom: 5vh;
-} */
-
 /* -------------projects---------------- */
-/* .projects {
-  margin: 0 auto;
-  text-align: center;
-  justify-content: space-evenly;
-} */
 
 .projects img {
   width: 70vh;
 }
 
-/* ------------project-hover-overlay------------ */
-
-/* body,
-html {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ddd;
-  width: 100%;
-  height: 100%;
-} */
 .projects {
   display: flex;
   width: 90%;
@@ -430,6 +406,77 @@ html {
 .project-text a{
   font-size: 25px;
   padding: 10px;
+}
+
+/* --------footer------------- */
+footer {
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+
+footer img {
+  padding: 20px 20px;
+
+}
+
+footer .flex-container{
+  justify-content: center;
+}
+
+
+
+/* --------popup-------------- */
+.popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 50%;
+}
+
+.popup.active {
+  transform: translate (-50%, -50%) scale(1);
+}
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#popup-overlay {
+  position: fixed;
+  /* opacity: 0; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  transition: 200ms ease-in-out;
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+footer h2{
+  text-align: center;
+
 }
 /* --------------------mobile-------------------- */
 
@@ -548,6 +595,26 @@ html {
     padding-bottom: 30px;
 }
 
+  .skills .fab {
+    font-size: 60px
+  }
   .fab {
     padding: 0 10px;
+    font-size: 28px;
   }
+
+  /* ----------what-ive-done--------- */
+  .projects {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .project {
+    width: 95%;
+    height: 350px;
+  }
+
+  )
