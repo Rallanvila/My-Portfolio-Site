@@ -75,8 +75,6 @@ gsap.from(".what-ive-done", {
     scrollTrigger: {
         trigger: ".what-ive-done",
         start: "top 70%",
-        markers: true,
-
     }
 })
 
