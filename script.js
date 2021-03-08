@@ -74,7 +74,9 @@ gsap.from(".what-ive-done", {
     duration: 1.5,
     scrollTrigger: {
         trigger: ".what-ive-done",
-        start: "top center"
+        start: "top 70%",
+        markers: true,
+
     }
 })
 

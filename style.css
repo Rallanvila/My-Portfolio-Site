@@ -72,6 +72,10 @@ a {
   padding: 0 96px;
   width: 100%;
 }
+
+.nav-left h1 {
+  line-height: 30px;
+}
 .logo {
   width: 159px;
   height: auto;
