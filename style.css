@@ -89,15 +89,23 @@ a {
 }
 
 .links {
-  width: 409px;
+  width: 500px;
   justify-content: space;
 }
 
 li {
-  padding: 0 17px;
+  padding: 0 20px;
   color: white;
   list-style-type: none;
   font-style: normal;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 30px;
+  border: none;
+  align-self: center;
+  font-style: bold;
 }
 
 /* --------Banner---------- */
@@ -134,56 +142,6 @@ li {
   background-attachment: fixed;
 }
 /* ---------About--------- */
-/* .about {
-  width: 940px;
-  margin: 10vh auto 10vh auto;
-  height: 80vh;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-}
-
-.center {
-  padding: 5vh 0;
-  justify-content: center;
-  text-align: center;
-  height: 772px;
-  margin: auto;
-  align-items: center;
-}
-
-.about img {
-  padding: 20px;
-}
-
-
-.nutshell {
-  text-align: center;
-  justify-content: center;
-  width: 934px;
-  height: 256px;
-  background-color: rgba(196, 196, 196, 26%);
-  margin: 73px auto 73px auto;
-}
-
-.nutshell h2 {
-  padding-top: 10px;
-}
-
-.nutbox {
-  margin: auto:
-  width: 934px;
-  justify-content: space-evenly;
-}
-
-
-.nut {
-    display: block;
-}
-
-.nut img {
-  padding: 10px;
-} */
 
 .about {
   width: 940px;
@@ -218,7 +176,7 @@ li {
 }
 
 .nutbox {
-  margin: auto:
+  margin: auto;
   width: 934px;
   justify-content: space-evenly;
 }
@@ -539,6 +497,21 @@ footer h2{
     width: 100%;
   }
 
+  .links a {
+    font-size: 16px;
+  }
+  
+  .links li {
+    margin: 0 3px;
+    padding: 0;
+    align-self: center;
+  }
+
+  .links button {
+    padding: 5px;
+    margin: 0;
+  }
+
   h1 {
     font-size: 64px;
   }
@@ -601,7 +574,7 @@ footer h2{
 
   .what-i-do{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 0px;
     display: block;
     height: auto;
     background-color: white;
@@ -610,7 +583,9 @@ footer h2{
   .nutbox2{
     padding: 0;
     margin: 0;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .nutbox2 p {
@@ -644,19 +619,17 @@ footer h2{
     text-align: center;
     justify-content: space-evenly;
     height: auto;
+    width: auto;
     padding-bottom: 30px;
 }
 
   .skills .fab {
-    font-size: 60px
-  }
-  .fab {
-    padding: 0 10px;
-    font-size: 28px;
+    font-size: 50px;
   }
 
   /* ----------what-ive-done--------- */
   .projects {
+    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
@@ -666,7 +639,9 @@ footer h2{
 
   .project {
     width: 95%;
-    height: 350px;
+    height: 200px;
+    padding: 30px 0;
+    margin: 30px auto;
   }
 
   )
