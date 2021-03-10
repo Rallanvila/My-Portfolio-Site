@@ -69,7 +69,7 @@ a {
 
 .nav {
   justify-content: space-between;
-  padding: 0 96px;
+  padding: 0 50px;
   width: 100%;
 }
 
@@ -89,7 +89,7 @@ a {
 }
 
 .links {
-  width: 500px;
+  width: auto;
   justify-content: space;
 }
 
