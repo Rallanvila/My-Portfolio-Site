@@ -134,7 +134,7 @@ li {
   background-attachment: fixed;
 }
 /* ---------About--------- */
-.about {
+/* .about {
   width: 940px;
   margin: 10vh auto 10vh auto;
   height: 80vh;
@@ -183,29 +183,76 @@ li {
 
 .nut img {
   padding: 10px;
+} */
+
+.about {
+  width: 940px;
+  margin: 40px auto 40px auto;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.about-myself {
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.about img {
+  padding: 20px;
+}
+
+
+.nutshell {
+  text-align: center;
+  justify-content: center;
+  width: 934px;
+  height: 256px;
+  background-color: rgba(196, 196, 196, 26%);
+  margin: 50px auto 50px auto;
+}
+
+.nutshell h2 {
+  padding-top: 10px;
+}
+
+.nutbox {
+  margin: auto:
+  width: 934px;
+  justify-content: space-evenly;
+}
+
+
+.nut {
+    display: block;
+}
+
+.nut img {
+  padding: 10px;
 }
 
 /* -----------What I Do---------- */
 .what-i-do {
-    margin: 10vh, 0 10vh 0;
+    margin: 40px auto;
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 65vh;
+    height: auto;
     background-color: rgba(196, 196, 196, 26%);
 }
 
 .nutbox2 {
-  margin: auto:
-  width: 934px;
-  justify-content: space-evenly;
-  text-align: center
+  margin: auto;
+  width: 1500px;
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: space-between;
+  text-align: center;
 }
 
-
-
 .what-i-do h2 {
-    padding: 61px 0 32px 0;
+    padding: 30px;
 }
 
 .what-i-do p {
@@ -224,22 +271,20 @@ li {
 /* ----------Experience-------------- */
 .experience {
   text-align: center;
-  height: 40vh;
-  margin-top: 5vh;
+  margin: 50px auto;
 }
 
 .experience p {
   width: 619px;
   text-align: center;
   margin: auto;
-  padding-bottom: 85px;
 }
 
 .skills {
   text-align: center;
-  justify-content: space-evenly;
-  padding: 0 100px
-  85px 100px;
+  justify-content: space-between;
+  margin: 50px auto;
+  width: 1500px;
 }
 
 .skills .fab {
@@ -277,20 +322,20 @@ li {
 
 /* ---------Resume----------- */
 .resume {
-  background-image: url(./Images/Resume2.jpg);
   width: 100%;
   height: 40vh;
-  background-position: center;
-  text-align: center;
+  margin-bottom: 50px;
   align-content: center;
-  margin-bottom: 85px;
+  text-align: center;
+  background-image: url(./Images/Resume2.jpg);
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
 .resume h2, p {
   align-self: center;
-  align
 }
 
 .resume-header {
@@ -336,21 +381,21 @@ li {
 
 .projects {
   display: flex;
-  width: 90%;
+  width: 1500px;
   height: 350px;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .project img {
-  width: 500px;
+  width: 100%;
 }
 
 .project {
   width: 500px;
-  padding: 1vh;
-  margin: 2vh;
+  padding: 20px;
+  margin: 50px 20px;
   background: #fff;
   position: relative;
   display: flex;
@@ -414,14 +459,17 @@ li {
 
 /* --------footer------------- */
 footer {
-  justify-content: center;
+  width: 100%;
   height: auto;
+  justify-content: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.906);;
 }
 
-footer img {
-  padding: 20px 20px;
-
+footer i {
+  margin: 40px 20px;
+  font-size: 40px;
+  opacity: 0.8;
 }
 
 footer .flex-container{
