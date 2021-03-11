@@ -62,9 +62,10 @@ nav {
 nav p,
 ul,
 li,
-a {
+a{
   color: white;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .nav {
@@ -106,6 +107,7 @@ button {
   border: none;
   align-self: center;
   font-style: bold;
+  cursor: pointer;
 }
 
 /* --------Banner---------- */
@@ -207,6 +209,7 @@ button {
   padding-bottom: 40px;
   justify-content: space-between;
   text-align: center;
+  align-self: flex-start;
 }
 
 .what-i-do h2 {
@@ -219,7 +222,8 @@ button {
 }
 
 .competencies {
-  display: block
+  display: block;
+  align-self: flex-start;
 }
 
 .competencies img {
@@ -510,6 +514,11 @@ footer h2{
   .links button {
     padding: 5px;
     margin: 0;
+    align-self: center;
+  }
+
+  .links a {
+    align-self: center;
   }
 
   h1 {
@@ -562,15 +571,22 @@ footer h2{
 
   .about p {
     width: 90%;
-    margin: auto
+    margin: auto;
   }
-/* ------------what-i-do------------ */
+
   .nutshell {
     width: 100%;
     flex-direction: column;
     padding: 0 auto 30px auto;
-    height: 300px;
+    height: auto;
   }
+
+  .nutbox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  
+/* ------------what-i-do------------ */
 
   .what-i-do{
     width: 100%;
@@ -607,6 +623,8 @@ footer h2{
   .experience h2 {
     padding: 20px;
   }
+
+
   /* --------experience----------- */
   .experience p {
     width: 90%;
@@ -643,5 +661,4 @@ footer h2{
     padding: 30px 0;
     margin: 30px auto;
   }
-
-  )
+)

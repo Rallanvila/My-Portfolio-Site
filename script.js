@@ -15,6 +15,16 @@ gsap.from(".nav", {
     opacity: 0, 
 })
 
+// gsap.to(".nav", {
+//     opacity: 0, 
+//     duration: .5,
+//     scrollTrigger: {
+//         trigger: ".nav",
+//         markers: true,
+//         start: 80vh, 
+//     }
+// })
+
 gsap.from(".about", {
     opacity: 0,
     duration: 1.5,
