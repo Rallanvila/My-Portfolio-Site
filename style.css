@@ -151,6 +151,9 @@ button {
   align-items: center;
 }
 
+.about img {
+  padding: 20px;
+}
 .about-myself {
   justify-content: center;
   text-align: center;
