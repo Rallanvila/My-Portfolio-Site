@@ -9,6 +9,7 @@ h3,
 h4,
 h5 {
   font-family: "Poppins", sans-serif;
+  opacity: 0.9;
 }
 
 h1 {
@@ -65,6 +66,7 @@ li,
 a {
   color: white;
   font-family: "Poppins", sans-serif;
+  opacity: 0.9;
 }
 
 .nav {
@@ -81,11 +83,13 @@ a {
   height: auto;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
 }
 
 .logo img {
   align-self: center;
   padding-right: 20px;
+  opacity: 0.9;
 }
 
 .links {
@@ -106,6 +110,7 @@ button {
   border: none;
   align-self: center;
   font-style: bold;
+  opacity: 0.9;
 }
 
 /* --------Banner---------- */
@@ -122,6 +127,8 @@ button {
 
 .headline {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   color: rgba(247, 239, 239, 0.975);
   left: 30vh;
   top: 35vh;
@@ -129,6 +136,27 @@ button {
 
 .headline p {
   text-align: center;
+  justify-content: flex-end;
+}
+
+.contact-button{
+    margin: 50px 0 0 0;
+    justify-content: flex-end;
+    border: none;
+    font-size: 36px;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.contact-button button{
+  padding: 10px 15px;
+  justify-content: flex-end;
+  align-self: flex-end;
+  float: right;
+  border: none;
+  font-size: 24px;
+  opacity: 0.9;
+  /* border-radius: 10px; */
 }
 
 .main-banner-overlay {
@@ -248,7 +276,7 @@ button {
 
 .nutbox2 {
   margin: auto;
-  max-width: 1500px;
+  max-width: 1300px;
   display: flex;
   padding-bottom: 40px;
   justify-content: space-between;
@@ -290,7 +318,7 @@ button {
   text-align: center;
   justify-content: space-between;
   margin: 50px auto;
-  width: 1500px;
+  width: 1250px;
 }
 
 .skills .fab {
@@ -387,7 +415,7 @@ button {
 
 .projects {
   display: flex;
-  width: 1500px;
+  width: 1300px;
   height: 350px;
   margin: 50px auto;
   text-align: center;
@@ -538,7 +566,7 @@ footer h2{
 }
 /* --------------------mobile-------------------- */
 
-@media only screen and (min-width: 400px) and (max-width: 501px) {
+@media only screen and (min-width: 400px) and (max-width: 650px) {
   nav {
     justify-content: space-between;
     padding: 0 5px;
@@ -601,6 +629,10 @@ footer h2{
     padding: 0;
     justify-content: center;
     text-align: center;
+  }
+
+  .contact-button button {
+    float: none;
   }
   /* ----------about--------------- */
   .about {

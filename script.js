@@ -1,29 +1,33 @@
-gsap.to(".headline", {
+gsap.to(".headline-animation", {
     duration: 3, 
     ease: "back",
 })
 
-gsap.from(".headline", {
+gsap.from(".headline-animation", {
     opacity: 0, 
-    duration: 5,
+    duration: 4,
     y: -200,
     ease: 'back',
 })
 
-gsap.from(".nav", {
-    duration: 8, 
+gsap.from(".webdev", {
     opacity: 0, 
+    delay: 5,
+    duration: 2,
+    ease: 'back',
 })
 
-// gsap.to(".nav", {
-//     opacity: 0, 
-//     duration: .5,
-//     scrollTrigger: {
-//         trigger: ".nav",
-//         markers: true,
-//         start: 80vh, 
-//     }
-// })
+gsap.from(".contact-button", {
+    opacity: 0, 
+    delay: 6,
+    duration: 2,
+    ease: 'back',
+})
+
+gsap.from(".nav", {
+    duration: 6, 
+    opacity: 0, 
+})
 
 gsap.from(".about", {
     opacity: 0,
