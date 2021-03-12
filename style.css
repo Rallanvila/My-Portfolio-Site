@@ -106,11 +106,11 @@ li {
 
 button {
   padding: 10px 15px;
-  margin-left: 30px;
   border: none;
   align-self: center;
   font-style: bold;
   opacity: 0.9;
+  cursor: pointer;
 }
 
 /* --------Banner---------- */
@@ -417,7 +417,16 @@ button {
   display: flex;
   width: 1300px;
   height: 350px;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.projects2 {
+  display: flex;
+  width: 1300px;
+  height: 350px;
+  margin: 0 auto 0 auto;
   text-align: center;
   justify-content: space-between;
 }
@@ -433,10 +442,16 @@ button {
   background: #fff;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   transition: 0.6s ease-out;
   text-align: left;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+#hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .project:hover {
@@ -566,7 +581,7 @@ footer h2{
 }
 /* --------------------mobile-------------------- */
 
-@media only screen and (min-width: 400px) and (max-width: 650px) {
+@media only screen and (min-width: 350px) and (max-width: 650px) {
   nav {
     justify-content: space-between;
     padding: 0 5px;
@@ -645,11 +660,19 @@ footer h2{
     margin: auto
   }
 /* ------------what-i-do------------ */
-  .nutshell {
+.headline {
+  top: 20vh;
+}  
+
+.nutshell {
     width: 100%;
     flex-direction: column;
     padding: 0 auto 30px auto;
     height: 300px;
+  }
+
+  .nutshell img {
+    height: 80px;
   }
 
   .what-i-do{
@@ -717,11 +740,27 @@ footer h2{
     height: auto;
   }
 
+  .projects2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
   .project {
     width: 95%;
     height: 200px;
     padding: 30px 0;
-    margin: 30px auto;
+    margin: 30px auto 30px auto;
   }
 
+  #hide {
+    display: none;
+  }
+
+  .fab, .fas {
+    font-size: 25px;
+  }
   )
