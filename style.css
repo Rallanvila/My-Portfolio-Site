@@ -62,10 +62,9 @@ nav {
 nav p,
 ul,
 li,
-a{
+a {
   color: white;
   font-family: "Poppins", sans-serif;
-  cursor: pointer;
 }
 
 .nav {
@@ -107,7 +106,6 @@ button {
   border: none;
   align-self: center;
   font-style: bold;
-  cursor: pointer;
 }
 
 /* --------Banner---------- */
@@ -159,15 +157,10 @@ button {
   margin: 50px auto;
 }
 
-.about img {
-  padding: 20px;
-}
-
-
 .nutshell {
   text-align: center;
   justify-content: center;
-  width: 934px;
+  max-width: 934px;
   height: 256px;
   background-color: rgba(196, 196, 196, 26%);
   margin: 50px auto 50px auto;
@@ -178,20 +171,68 @@ button {
 }
 
 .nutbox {
-  margin: auto;
-  width: 934px;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-rows: 152px 25px;
+  grid-template-columns: 50px repeat(3, 1fr) 50px;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
 }
 
 
-.nut {
-    display: block;
+.nut1 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
 }
 
-.nut img {
-  padding: 10px;
+.nut2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
 }
 
+.nut3 {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.p1 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.p2 {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.p3 {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
 /* -----------What I Do---------- */
 .what-i-do {
     margin: 40px auto;
@@ -204,7 +245,7 @@ button {
 
 .nutbox2 {
   margin: auto;
-  width: 1500px;
+  max-width: 1500px;
   display: flex;
   padding-bottom: 40px;
   justify-content: space-between;
@@ -514,11 +555,6 @@ footer h2{
   .links button {
     padding: 5px;
     margin: 0;
-    align-self: center;
-  }
-
-  .links a {
-    align-self: center;
   }
 
   h1 {
@@ -571,22 +607,15 @@ footer h2{
 
   .about p {
     width: 90%;
-    margin: auto;
+    margin: auto
   }
-
+/* ------------what-i-do------------ */
   .nutshell {
     width: 100%;
     flex-direction: column;
     padding: 0 auto 30px auto;
-    height: auto;
+    height: 300px;
   }
-
-  .nutbox {
-    width: 100%;
-    padding-bottom: 30px;
-  }
-  
-/* ------------what-i-do------------ */
 
   .what-i-do{
     width: 100%;
@@ -623,8 +652,6 @@ footer h2{
   .experience h2 {
     padding: 20px;
   }
-
-
   /* --------experience----------- */
   .experience p {
     width: 90%;
@@ -661,4 +688,5 @@ footer h2{
     padding: 30px 0;
     margin: 30px auto;
   }
-)
+
+  )
