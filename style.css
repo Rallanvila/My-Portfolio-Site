@@ -104,7 +104,7 @@ li {
   font-style: normal;
 }
 
-button {
+.button {
   padding: 10px 15px;
   border: none;
   align-self: center;
@@ -143,20 +143,29 @@ button {
     margin: 50px 0 0 0;
     justify-content: flex-end;
     border: none;
+    width: 135px;
     font-size: 36px;
     opacity: 0.9;
     border-radius: 10px;
 }
 
-.contact-button button{
+.headline button{
   padding: 10px 15px;
   justify-content: flex-end;
   align-self: flex-end;
-  float: right;
+  width: auto;
+  /* float: right; */
   border: none;
   font-size: 24px;
   opacity: 0.9;
+  cursor: pointer;
+  margin: auto;
   /* border-radius: 10px; */
+}
+
+.headline a {
+  width: 154px;
+  align-self: flex-end;
 }
 
 .main-banner-overlay {
