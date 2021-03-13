@@ -102,7 +102,14 @@ li {
   color: white;
   list-style-type: none;
   font-style: normal;
+  text-decoration;
 }
+
+li a {
+  text-decoration: none;
+}
+
+
 
 .button {
   padding: 10px 15px;
