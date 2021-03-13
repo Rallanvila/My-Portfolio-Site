@@ -5,21 +5,21 @@ gsap.to(".headline-animation", {
 
 gsap.from(".headline-animation", {
     opacity: 0, 
-    duration: 4,
-    y: -200,
+    duration: 2,
+    y: -300,
     ease: 'back',
 })
 
 gsap.from(".webdev", {
     opacity: 0, 
-    delay: 5,
-    duration: 2,
+    delay: 2.5,
+    duration: 2.,
     ease: 'back',
 })
 
 gsap.from(".contact-button", {
     opacity: 0, 
-    delay: 6,
+    delay: 3,
     duration: 2,
     ease: 'back',
 })
