@@ -94,34 +94,47 @@ gsap.from(".what-ive-done", {
 
 // ----------popup-----------
 
-const openPopupButtons = document.querySelectorAll(`[data-popup-target]`);
+let modalBtn = document.getElementById("kim-btn");
+let modal = document.querySelector(".kim-modal");
+let closeBtn = document.querySelector(".close-btn");
+modalBtn.onclick = function(){
+  modal.style.display = "block"
+};
+closeBtn.onclick = function(){
+  modal.style.display = "none"
+};
+window.onclick = function(e){
+  if(event.target == modal){
+    modal.style.display = "none"
+  }
+};
 
-const closePopupButtons = document.querySelectorAll(`[data-close-button]`);
+let modalBtn2 = document.getElementById("sushi-btn");
+let modal2 = document.querySelector(".sushi-modal");
+let closeBtn2 = document.querySelector(".sushi-close-btn");
+modalBtn2.onclick = function(){
+  modal2.style.display = "block"
+};
+closeBtn2.onclick = function(){
+  modal2.style.display = "none"
+};
+window.onclick = function(e){
+  if(event.target == modal){
+    modal2.style.display = "none"
+  }
+};
 
-const overlay= document.getElementById(`overlay`);
-
-openPopupButtons.forEach(button=> {
-    button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.popupTarget)
-        openPopup(popup)
-    })
-})
-
-closePopupButtons.forEach(button=> {
-    button.addEventListener('click', () => {
-        const popup = button.closest('.popup')
-        closePopup(popup)
-    })
-})
-
-function openPopup(popup) {
-    if (modall == null) return
-    popup.classList.add('active')
-    popup-overlay.classList.add('active')
-}
-
-function closePopup(popup) {
-    if (modall == null) return
-    popup.classList.remove('active')
-    popup-overlay.classList.remove('active')
-}
+let modalBtn3 = document.getElementById("medical-btn");
+let modal3 = document.querySelector(".medical-modal");
+let closeBtn3 = document.querySelector(".medical-close-btn");
+modalBtn3.onclick = function(){
+  modal3.style.display = "block"
+};
+closeBtn3.onclick = function(){
+  modal3.style.display = "none"
+};
+window.onclick = function(e){
+  if(event.target == modal){
+    modal3.style.display = "none"
+  }
+};

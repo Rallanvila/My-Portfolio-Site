@@ -515,6 +515,145 @@ p {
 	padding: 10px;
 }
 
+/* -----------Modal---------------- */
+
+.kim-modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sushi-modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	
+}
+
+.medical-modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
+	flex-direction: column;
+	width: 700px;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, 0.262);
+	background-color: rgba(216, 216, 216);
+	box-shadow: rgba(0, 0, 0, 0.173) 2px 2px 2px;
+	border-radius: 15px;
+	z-index: 50;
+	
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
+	flex-direction: column;
+	width: 700px;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, 0.262);
+	background-color: white;
+	
+}
+
+.container img {
+	width: 100%;
+	margin: auto;
+	padding: 0 0 20px 0;
+	z-index: 50;
+}
+
+.container p {
+	padding: 0 0 20px 0;
+}
+
+.container li {
+	list-style-type: none;
+	color: black;
+}
+
+.container i {
+	font-size: 35px;
+	padding: 20px 10px;
+}
+
+.modal-header {
+	display: flex;
+	justify-content: center;
+	opacity: 1;
+	width: 100%;
+}
+
+#modal-btn {
+	padding: 2px 4px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.modal-header h1 {
+	align-self: center;
+}
+
+.close-btn {
+	position: relative;
+	left: 22%;
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	background: none;
+}
+.sushi-close-btn {
+	position: relative;
+	left: 33%;
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	background: none;
+}
+.medical-close-btn {
+	position: relative;
+	left: 20%;
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	background: none;
+}
+
+
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 /* --------footer------------- */
 footer {
 	width: 100%;
@@ -534,57 +673,6 @@ footer .flex-container {
 	justify-content: center;
 }
 
-/* --------popup-------------- */
-.popup {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate (-50%, -50%) scale(0);
-	transition: 200ms ease-in-out;
-	border-radius: 5px;
-	z-index: 10;
-	background-color: white;
-	width: 500px;
-	max-width: 50%;
-}
-
-.popup.active {
-	transform: translate (-50%, -50%) scale(1);
-}
-.popup-header {
-	padding: 10px 15px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.modal-header .close-button {
-	cursor: pointer;
-	border: none;
-	outline: none;
-	background: none;
-}
-
-#popup-overlay {
-	position: fixed;
-	/* opacity: 0; */
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	transition: 200ms ease-in-out;
-	pointer-events: none;
-}
-
-#overlay.active {
-	pointer-events: all;
-	opacity: 1;
-}
-
-footer h2 {
-	text-align: center;
-}
 /* --------------------mobile-------------------- */
 
 @media only screen and (min-width: 651px) and (max-width: 850px) {
