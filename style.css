@@ -762,7 +762,18 @@ footer h2 {
 		padding: 0;
 		justify-content: center;
 		text-align: center;
-	}
+  }
+  
+  .headline button {
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .headline a{
+    justify-content: center;
+    align-self: center;
+  }
 
 	.contact-button button {
 		float: none;
