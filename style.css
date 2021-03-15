@@ -1,6 +1,6 @@
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 h1,
@@ -8,65 +8,55 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Poppins", sans-serif;
-  opacity: 0.9;
+	font-family: "Poppins", sans-serif;
+	opacity: 0.9;
 }
 
 h1 {
-  font-size: 64px;
+	font-size: 64px;
 }
 
 h2 {
-  font-size: 36px;
+	font-size: 36px;
 }
 
 h3 {
-  font-size: 4rem;
+	font-size: 4rem;
 }
 
 h4 {
-  font-size: 36px;
+	font-size: 36px;
 }
 
 h5 {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 p {
-  font-family: "Zilla Slab", serif;
-  line-height: 25px;
+	font-family: "Zilla Slab", serif;
+	line-height: 25px;
 }
 
-section{
-  margin: 10px auto;
+section {
+	margin: 10px auto;
 }
 
 .flex-container {
-  display: flex;
-  align-self: center;
-  align-content: center;
+	display: flex;
+	align-self: center;
+	align-content: center;
 }
-
 
 /* ----------Nav Bar--------- */
 nav {
-  width: 100%;
-  height: 65px;
-  justify-content: space-between;
-  align-content: center;
-  align-content: center;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.906);
-  z-index: 10;
-}
-
-nav p,
-ul,
-li,
-a {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  opacity: 0.9;
+	width: 100%;
+	height: 65px;
+	justify-content: space-between;
+	align-content: center;
+	align-content: center;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.906);
+	z-index: 10;
 }
 
 .nav {
@@ -75,703 +65,822 @@ a {
   width: 100%;
 }
 
+nav p,
+ul,
+li,
+a {
+	color: white;
+	font-family: "Poppins", sans-serif;
+	opacity: 0.9;
+}
+
 .logo {
-  width: 159px;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  
+	width: 159px;
+	height: auto;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo img {
-  align-self: center;
-  padding-right: 20px;
+	align-self: center;
+	padding-right: 20px;
 }
 
 .links {
-  width: auto;
-  justify-content: space;
+	width: auto;
+	justify-content: space;
 }
 
 li {
-  padding: 0 20px;
-  color: white;
-  list-style-type: none;
-  font-style: normal;
-  opacity: 1;
+	padding: 0 20px;
+	color: white;
+	list-style-type: none;
+	font-style: normal;
+	opacity: 1;
 }
 
 li a {
-  text-decoration: none;
-  opacity: 1;
+	text-decoration: none;
+	opacity: 1;
 }
 
 .button {
-  padding: 10px 15px;
-  border: none;
-  align-self: center;
-  font-style: bold;
-  opacity: 0.9;
-  cursor: pointer;
+	padding: 10px 15px;
+	border: none;
+	align-self: center;
+	font-style: bold;
+	opacity: 0.9;
+	cursor: pointer;
 }
 
 /* --------Banner---------- */
 .main-banner {
-  width: 100%;
-  height: 80vh;
-  background-image: url(./Images/Banner-Hires.jpg);
-  background-size: cover;
-  justify-self: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+	width: 100%;
+	height: 80vh;
+	background-image: url(./Images/Banner-Hires.jpg);
+	background-size: cover;
+	justify-self: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .headline {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  color: rgba(247, 239, 239, 0.975);
-  left: 30vh;
-  top: 35vh;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	color: rgba(247, 239, 239, 0.975);
+	left: 30vh;
+	top: 35vh;
 }
 
 .headline p {
-  text-align: center;
-  justify-content: flex-end;
+	text-align: center;
+	justify-content: flex-end;
 }
 
-.contact-button{
-    margin: 50px 0 0 0;
-    justify-content: flex-end;
-    border: none;
-    width: 135px;
-    font-size: 36px;
-    opacity: 0.9;
-    border-radius: 10px;
+.contact-button {
+	margin: 50px 0 0 0;
+	justify-content: flex-end;
+	border: none;
+	width: 135px;
+	font-size: 36px;
+	opacity: 0.9;
+	border-radius: 10px;
 }
 
-.headline button{
-  padding: 10px 15px;
-  justify-content: flex-end;
-  align-self: flex-end;
-  width: auto;
-  /* float: right; */
-  border: none;
-  font-size: 24px;
-  opacity: 0.9;
-  cursor: pointer;
-  margin: auto;
-  /* border-radius: 10px; */
+.headline button {
+	padding: 10px 15px;
+	justify-content: flex-end;
+	align-self: flex-end;
+	width: auto;
+	/* float: right; */
+	border: none;
+	font-size: 24px;
+	opacity: 0.9;
+	cursor: pointer;
+	margin: auto;
+	/* border-radius: 10px; */
 }
 
 .headline a {
-  width: 154px;
-  align-self: flex-end;
+	width: 154px;
+	align-self: flex-end;
 }
 
 .main-banner-overlay {
-  width: 100%;
-  height: 80vh;
-  background: #000;
-  opacity: 0.3;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+	width: 100%;
+	height: 80vh;
+	background: #000;
+	opacity: 0.3;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 /* ---------About--------- */
 
 .about {
-  width: 940px;
-  margin: 40px auto 40px auto;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
+	width: 940px;
+	margin: 40px auto 40px auto;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
 }
 
 .about img {
-  padding: 20px;
+	padding: 20px;
 }
 .about-myself {
-  justify-content: center;
-  text-align: center;
-  margin: 50px auto;
+	justify-content: center;
+	text-align: center;
+	margin: 50px auto;
 }
 
 .nutshell {
-  text-align: center;
-  justify-content: center;
-  max-width: 934px;
-  height: 256px;
-  background-color: rgba(196, 196, 196, 26%);
-  margin: 50px auto 50px auto;
+	text-align: center;
+	justify-content: center;
+	max-width: 934px;
+	height: 256px;
+	background-color: rgba(196, 196, 196, 26%);
+	margin: 50px auto 50px auto;
 }
 
 .nutshell h2 {
-  padding-top: 10px;
+	padding-top: 10px;
 }
 
 .nutbox {
-  display: grid;
-  grid-template-rows: 152px 25px;
-  grid-template-columns: 50px repeat(3, 1fr) 50px;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
+	display: grid;
+	grid-template-rows: 152px 25px;
+	grid-template-columns: 50px repeat(3, 1fr) 50px;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
 }
 
-
 .nut1 {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
 }
 
 .nut2 {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
+	grid-column: 3 / span 1;
+	grid-row: 1 / span 1;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
 }
 
 .nut3 {
-  grid-column: 4 / span 1;
-  grid-row: 1 / span 1;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
+	grid-column: 4 / span 1;
+	grid-row: 1 / span 1;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
 }
 
 .p1 {
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
 }
 
 .p2 {
-  grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
+	grid-column: 3 / span 1;
+	grid-row: 2 / span 1;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
 }
 
 .p3 {
-  grid-column: 4 / span 1;
-  grid-row: 2 / span 1;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
+	grid-column: 4 / span 1;
+	grid-row: 2 / span 1;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
 }
 /* -----------What I Do---------- */
 .what-i-do {
-    margin: 40px auto;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: rgba(196, 196, 196, 26%);
+	margin: 40px auto;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	background-color: rgba(196, 196, 196, 26%);
 }
 
 .nutbox2 {
-  margin: auto;
-  max-width: 1300px;
-  display: flex;
-  padding-bottom: 40px;
-  justify-content: space-between;
-  text-align: center;
-  align-self: flex-start;
+	margin: auto;
+	max-width: 1300px;
+	display: flex;
+	padding-bottom: 40px;
+	justify-content: space-between;
+	text-align: center;
+	align-self: flex-start;
 }
 
 .what-i-do h2 {
-    padding: 30px;
+	padding: 30px;
 }
 
 .what-i-do p {
-    width: 335px;
-    padding: 8px;
+	width: 335px;
+	padding: 8px;
 }
 
 .competencies {
-  display: block;
-  align-self: flex-start;
+	display: block;
+	align-self: flex-start;
 }
 
 .competencies img {
-  margin-bottom: 42px;
+	margin-bottom: 42px;
 }
 
 /* ----------Experience-------------- */
 .experience {
-  text-align: center;
-  margin: 50px auto;
+	text-align: center;
+	margin: 50px auto;
 }
 
 .experience p {
-  width: 619px;
-  text-align: center;
-  margin: auto;
+	width: 619px;
+	text-align: center;
+	margin: auto;
 }
 
 .skills {
-  text-align: center;
-  justify-content: space-between;
-  margin: 50px auto;
-  width: 1250px;
+	text-align: center;
+	justify-content: space-between;
+	margin: 50px auto;
+	width: 1250px;
 }
 
 .skills .fab {
-  font-size: 90px;
-  color: rgba(0, 0, 0, 90%)
+	font-size: 90px;
+	color: rgba(0, 0, 0, 90%);
 }
 
 .fa-react:hover {
-  color: rgba(96, 218, 251, 100%)
+	color: rgba(96, 218, 251, 100%);
 }
 
 .fa-html5:hover {
-  color: rgba(229, 90, 35, 100%)
+	color: rgba(229, 90, 35, 100%);
 }
 
 .fa-js-square:hover {
-  color: rgba(247, 223, 31, 100%)
+	color: rgba(247, 223, 31, 100%);
 }
 
 .fa-css3-alt:hover {
-  color: rgba(37, 76, 228, 100%)
+	color: rgba(37, 76, 228, 100%);
 }
 
 .fa-node-js:hover {
-  color: rgba(89, 150, 86, 100%)
+	color: rgba(89, 150, 86, 100%);
 }
 
 .fa-github:hover {
-  color: #6A2B86;
+	color: #6a2b86;
 }
 
 .fa-figma:hover {
-  color: #F96E60
+	color: #f96e60;
 }
 
 /* ---------Resume----------- */
 .resume {
-  width: 100%;
-  height: 40vh;
-  margin-bottom: 50px;
-  align-content: center;
-  text-align: center;
-  background-image: url(./Images/Resume2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+	width: 100%;
+	height: 40vh;
+	margin-bottom: 50px;
+	align-content: center;
+	text-align: center;
+	background-image: url(./Images/Resume2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
-.resume h2, p {
-  align-self: center;
+.resume h2,
+p {
+	align-self: center;
 }
 
 .resume-header {
-  width: 420px;
-  margin: auto;
+	width: 420px;
+	margin: auto;
 }
 
 .resume-header h2 {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .resume-header p {
-  border: 2px solid white;
-  width: 97px;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 10px;
-  margin: auto
+	border: 2px solid white;
+	width: 97px;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px;
+	margin: auto;
 }
 
 .resume-header {
-  z-index: 2;
-  color: white;
+	z-index: 2;
+	color: white;
 }
 
 .resume-overlay {
-  width: 100%;
-  height: 40vh;
-  background: #000;
-  opacity: 0.5;
-  position: absolute;
+	width: 100%;
+	height: 40vh;
+	background: #000;
+	opacity: 0.5;
+	position: absolute;
 }
 
 .what-ive-done {
-  text-align: center;
+	text-align: center;
 }
 
 /* -------------projects---------------- */
 
 .projects img {
-  width: 70vh;
+	width: 70vh;
 }
 
 .projects {
-  display: flex;
-  width: 1300px;
-  height: 350px;
-  margin: 50px auto 0 auto;
-  text-align: center;
-  justify-content: space-between;
+	display: flex;
+	width: 1300px;
+	height: 350px;
+	margin: 50px auto 0 auto;
+	text-align: center;
+	justify-content: space-between;
 }
 
 .projects2 {
-  display: flex;
-  width: 1300px;
-  height: 350px;
-  margin: 0 auto 0 auto;
-  text-align: center;
-  justify-content: space-between;
+	display: flex;
+	width: 1300px;
+	height: 350px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	justify-content: space-between;
 }
 
 .project img {
-  width: 100%;
+	width: 100%;
 }
 
 .project {
-  width: 500px;
-  padding: 20px;
-  margin: 50px 20px;
-  background: #fff;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  transition: 0.6s ease-out;
-  text-align: left;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+	width: 500px;
+	padding: 20px;
+	margin: 50px 20px;
+	background: #fff;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	transition: 0.6s ease-out;
+	text-align: left;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #hide {
-  opacity: 0;
-  pointer-events: none;
+	opacity: 0;
+	pointer-events: none;
 }
 
 .project:hover {
-  transform: translateY(3px);
+	transform: translateY(3px);
 }
 .project:hover:before {
-  opacity: .8;
+	opacity: 0.8;
 }
 
 .project:hover .project-text {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .project:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #000, transparent);
-  z-index: 2;
-  transition: 0.5s;
-  opacity: 0;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #000, transparent);
+	z-index: 2;
+	transition: 0.5s;
+	opacity: 0;
 }
 
 .project img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
 }
 
 .project .project-text {
-  position: relative;
-  z-index: 3;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.5s;
+	position: relative;
+	z-index: 3;
+	color: #fff;
+	opacity: 0;
+	transform: translateY(40px);
+	transition: 0.5s;
 }
 
 .project-text h5 {
-  padding: 10px;
+	padding: 10px;
 }
-.project-text a{
-  font-size: 25px;
-  padding: 10px;
+.project-text a {
+	font-size: 25px;
+	padding: 10px;
 }
 
 /* --------footer------------- */
 footer {
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.906);;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.906);
 }
 
 footer i {
-  margin: 40px 20px;
-  font-size: 40px;
-  opacity: 0.8;
+	margin: 40px 20px;
+	font-size: 40px;
+	opacity: 0.8;
 }
 
-footer .flex-container{
-  justify-content: center;
+footer .flex-container {
+	justify-content: center;
 }
-
-
 
 /* --------popup-------------- */
-.popup{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate (-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border-radius: 5px;
-  z-index: 10;
-  background-color: white;
-  width: 500px;
-  max-width: 50%;
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate (-50%, -50%) scale(0);
+	transition: 200ms ease-in-out;
+	border-radius: 5px;
+	z-index: 10;
+	background-color: white;
+	width: 500px;
+	max-width: 50%;
 }
 
 .popup.active {
-  transform: translate (-50%, -50%) scale(1);
+	transform: translate (-50%, -50%) scale(1);
 }
 .popup-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
 }
 
 #popup-overlay {
-  position: fixed;
-  /* opacity: 0; */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  transition: 200ms ease-in-out;
-  pointer-events: none;
+	position: fixed;
+	/* opacity: 0; */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 200ms ease-in-out;
+	pointer-events: none;
 }
 
 #overlay.active {
-  pointer-events: all;
-  opacity: 1;
+	pointer-events: all;
+	opacity: 1;
 }
 
-footer h2{
-  text-align: center;
-
+footer h2 {
+	text-align: center;
 }
 /* --------------------mobile-------------------- */
 
-@media only screen and (min-width: 350px) and (max-width: 650px) {
-  nav {
-    justify-content: space-between;
-    padding: 0 5px;
-    width: 100%;
-  }
+@media only screen and (min-width: 651px) and (max-width: 850px) {
 
-  .links a {
-    font-size: 16px;
-  }
-  
-  .links li {
-    margin: 0 3px;
-    padding: 0;
-    align-self: center;
-  }
-
-  .links button {
-    padding: 5px;
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 64px;
-  }
-  
   h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
-  
-  h3 {
-    font-size: 4rem;
+
+  .html {
+    width: 850px;
   }
-  
-  h4 {
-    font-size: 3rem;
-  }
-  
-  h5 {
-    font-size: 24px;
+  nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
   .nav {
-    padding: 0 10px;
-  }
-
-  .nav li {
-    padding: 10px
-  }
-
-  .main-banner {
+    padding: 0;
+    margin: 0;
     width: 100%;
-    height: 80vh;
-    background-image: url(./Images/Banner4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+  }
+  .links  {
+    padding: 0;
+    margin: 0;
+  }
+  .headline h1 {
+    font-size: 42px;
+  }
+  .headline h5 {
+    font-size: 16px;
   }
   .headline {
-    left: 0;
-    padding: 0;
-    justify-content: center;
-    text-align: center;
-  }
+    display: flex;
 
-  .contact-button button {
-    float: none;
   }
-  /* ----------about--------------- */
+  .headline button {
+    padding: 5px 10px;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: auto;
+    /* float: right; */
+    border: none;
+    font-size: 16px;
+    opacity: 0.9;
+    cursor: pointer;
+    margin: auto;
+    /* border-radius: 10px; */
+  }
+  .headline a {
+    width: 110px
+  }
   .about {
-    width: 100%;
-    margin: 10px 5px;
+    width: 800px;
+  };
+  section {
+    width: 800px;
   }
-
-  .about p {
-    width: 90%;
+  #about {
+    width: 800px;
     margin: auto
   }
-/* ------------what-i-do------------ */
-.headline {
-  top: 20vh;
-}  
 
-.nutshell {
+  .about-myself {
+    width: 800px;
+  }
+  .about-myself p {
+    width: 750px;
+    text-align: center;
+    margin: auto
+  }
+  .what-i-do {
     width: 100%;
     flex-direction: column;
-    padding: 0 auto 30px auto;
-    height: 300px;
   }
-
-  .nutshell img {
-    height: 80px;
+  .nutshell {
+    width: 750px;
   }
-
-  .what-i-do{
+  .nutbox {
+    width: 750px;
+  }
+  .nutbox2 {
     width: 100%;
-    margin-top: 0px;
-    display: block;
-    height: auto;
-    background-color: white;
-  }
-
-  .nutbox2{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
     flex-direction: column;
-  }
-
-  .nutbox2 p {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 50px;
-  }
-
-  .fab {
-    font-size: 50px;
-  }
-  .experience {
+    justify-content: center;
+    align-self: center;
     text-align: center;
-    height: auto;
+  }
+  .competencies {
+    align-self: center;
+  }
+  .competencies p {
+    padding-bottom: 40px;
+  }
+  .projects {
     width: 100%;
-    background-color: rgba(196, 196, 196, 26%);
   }
-
-  .experience h2 {
-    padding: 20px;
+  .projects2 {
+    width: 100%;
   }
-  /* --------experience----------- */
-  .experience p {
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 50px auto 30px auto;
-  }
-  
+	.main-banner {
+		width: 100%;
+	}
   .skills {
-    text-align: center;
-    justify-content: space-evenly;
-    height: auto;
-    width: auto;
-    padding-bottom: 30px;
+    width: 90%;
+  }
+  .skills .fab {
+    font-size: 60px;
+  }
+	.about {
+		width: 850px;
+	}
 }
 
-  .skills .fab {
-    font-size: 50px;
-  }
 
-  /* ----------what-ive-done--------- */
-  .projects {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: auto;
-  }
+@media only screen and (min-width: 350px) and (max-width: 650px) {
+	nav {
+		justify-content: space-between;
+		padding: 0 5px;
+		width: 100%;
+	}
 
-  .projects2 {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: auto;
-  }
+	.links a {
+		font-size: 16px;
+	}
 
-  .project {
-    width: 95%;
-    height: 200px;
-    padding: 30px 0;
-    margin: 30px auto 30px auto;
-  }
+	.links li {
+		margin: 0 3px;
+		padding: 0;
+		align-self: center;
+	}
 
-  #hide {
-    display: none;
-  }
+	.links button {
+		padding: 5px;
+		margin: 0;
+	}
 
-  .fab, .fas {
-    font-size: 25px;
-  }
-  )
+	h1 {
+		font-size: 64px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 4rem;
+	}
+
+	h4 {
+		font-size: 3rem;
+	}
+
+	h5 {
+		font-size: 24px;
+	}
+	.nav {
+		padding: 0 10px;
+	}
+
+	.nav li {
+		padding: 10px;
+	}
+
+	.main-banner {
+		width: 100%;
+		height: 80vh;
+		background-image: url(./Images/Banner4.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	.headline {
+		left: 0;
+		padding: 0;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.contact-button button {
+		float: none;
+	}
+	/* ----------about--------------- */
+.about {
+	width: 100%;
+	margin: 10px 5px;
+}
+
+.about p {
+	width: 90%;
+	margin: auto;
+}
+/* ------------what-i-do------------ */
+.headline {
+	top: 20vh;
+}
+
+.nutshell {
+	width: 100%;
+	flex-direction: column;
+	padding: 0 auto 30px auto;
+	height: 300px;
+}
+
+.nutshell img {
+	height: 80px;
+}
+
+.what-i-do {
+	width: 100%;
+	margin-top: 0px;
+	display: block;
+	height: auto;
+	background-color: white;
+}
+
+.nutbox2 {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.nutbox2 p {
+	width: 90%;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+.fab {
+	font-size: 50px;
+}
+.experience {
+	text-align: center;
+	height: auto;
+	width: 100%;
+	background-color: rgba(196, 196, 196, 26%);
+}
+
+.experience h2 {
+	padding: 20px;
+}
+/* --------experience----------- */
+.experience p {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 50px auto 30px auto;
+}
+
+.skills {
+	text-align: center;
+	justify-content: space-evenly;
+	height: auto;
+	width: auto;
+	padding-bottom: 30px;
+}
+
+.skills .fab {
+	font-size: 50px;
+}
+
+/* ----------what-ive-done--------- */
+.projects {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+.projects2 {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+.project {
+	width: 95%;
+	height: 200px;
+	padding: 30px 0;
+	margin: 30px auto 30px auto;
+}
+
+#hide {
+	display: none;
+}
+
+.fab,
+.fas {
+	font-size: 25px;
+}
+)
+
