@@ -1090,7 +1090,8 @@ footer .flex-container {
 	z-index: 50;
 	background-color: rgba(0, 0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.4);
-	overflow: auto;
+	height: 550px;
+	overflow-y: auto;
 }
 .container {
 	width: 100%;
