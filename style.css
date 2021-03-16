@@ -146,7 +146,6 @@ li a {
 	width: 135px;
 	font-size: 36px;
 	opacity: 0.9;
-	border-radius: 10px;
 }
 
 .headline button {
@@ -515,6 +514,18 @@ p {
 	padding: 10px;
 }
 
+.project-text button {
+	cursor: pointer;
+	padding: 3px 5px;
+	margin-left: 10px;
+}
+
+#container-i {
+	color: black;
+	cursor: pointer;
+	font-size: 30px;
+}
+
 /* -----------Modal---------------- */
 
 .kim-modal {
@@ -567,7 +578,14 @@ p {
 	box-shadow: rgba(0, 0, 0, 0.173) 2px 2px 2px;
 	border-radius: 15px;
 	z-index: 50;
-	
+}
+
+.modal-content h2{
+	font-size: 36px;
+}
+.modal-content h3 {
+	font-size: 24px;
+	padding: 0 0 10px 0;
 }
 
 .container {
@@ -627,6 +645,7 @@ p {
 	border: none;
 	font-size: 30px;
 	background: none;
+	cursor: pointer;
 }
 .sushi-close-btn {
 	position: relative;
@@ -635,6 +654,7 @@ p {
 	border: none;
 	font-size: 30px;
 	background: none;
+	cursor: pointer;
 }
 .medical-close-btn {
 	position: relative;
@@ -643,6 +663,7 @@ p {
 	border: none;
 	font-size: 30px;
 	background: none;
+	cursor: pointer;
 }
 
 
@@ -784,8 +805,67 @@ footer .flex-container {
 	.about {
 		width: 850px;
 	}
-}
+	.modal-content {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-self: center;
+		flex-direction: column;
+		width: 450px;
+		margin: auto;
+		border: 1px solid rgba(0, 0, 0, 0.262);
+		background-color: rgba(216, 216, 216);
+		box-shadow: rgba(0, 0, 0, 0.173) 2px 2px 2px;
+		border-radius: 15px;
+		z-index: 50;
+	}
+	.kim-modal, .sushi-modal, .medical-modal {
+		display: none;
+		position: fixed;
+		width: 450px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		z-index: 50;
+		background-color: rgba(0, 0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.container {
+		width: 100%;
+	}
 
+	.container p {
+		width: 90%;
+	}
+	.close-btn {
+		position: relative;
+		left: 7%;
+		background-color: white;
+		border: none;
+		font-size: 30px;
+		background: none;
+		cursor: pointer;
+	}
+	.sushi-close-btn {
+		position: relative;
+		left: 29%;
+		background-color: white;
+		border: none;
+		font-size: 30px;
+		background: none;
+		cursor: pointer;
+	}
+	.medical-close-btn {
+		position: relative;
+		left: 7%;
+		background-color: white;
+		border: none;
+		font-size: 30px;
+		background: none;
+		cursor: pointer;
+	}
+}
 
 @media only screen and (min-width: 350px) and (max-width: 650px) {
 	nav {
@@ -980,6 +1060,66 @@ footer .flex-container {
 .fab,
 .fas {
 	font-size: 25px;
+}
+.modal-content {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
+	flex-direction: column;
+	width: 450px;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, 0.262);
+	background-color: rgba(216, 216, 216);
+	box-shadow: rgba(0, 0, 0, 0.173) 2px 2px 2px;
+	border-radius: 15px;
+	z-index: 50;
+}
+.kim-modal, .sushi-modal, .medical-modal {
+	display: none;
+	position: fixed;
+	width: 450px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.container {
+	width: 100%;
+}
+
+.container p {
+	width: 90%;
+}
+.close-btn {
+	position: relative;
+	left: 7%;
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	background: none;
+	cursor: pointer;
+}
+.sushi-close-btn {
+	position: relative;
+	left: 29%;
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	background: none;
+	cursor: pointer;
+}
+.medical-close-btn {
+	position: relative;
+	left: 7%;
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	background: none;
+	cursor: pointer;
 }
 )
 
