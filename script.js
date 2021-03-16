@@ -99,9 +99,11 @@ let modal = document.querySelector(".kim-modal");
 let closeBtn = document.querySelector(".close-btn");
 modalBtn.onclick = function(){
   modal.style.display = "block"
+  overlay.classList.add('active')
 };
 closeBtn.onclick = function(){
-  modal.style.display = "none"
+    modal.style.display = "none"
+    overlay.classList.remove('active')
 };
 window.onclick = function(e){
   if(event.target == modal){
@@ -113,10 +115,12 @@ let modalBtn2 = document.getElementById("sushi-btn");
 let modal2 = document.querySelector(".sushi-modal");
 let closeBtn2 = document.querySelector(".sushi-close-btn");
 modalBtn2.onclick = function(){
-  modal2.style.display = "block"
+  modal2.style.display = "block";
+  overlay.classList.add('active')
 };
 closeBtn2.onclick = function(){
   modal2.style.display = "none"
+  overlay.classList.remove('active')
 };
 window.onclick = function(e){
   if(event.target == modal){
@@ -129,9 +133,11 @@ let modal3 = document.querySelector(".medical-modal");
 let closeBtn3 = document.querySelector(".medical-close-btn");
 modalBtn3.onclick = function(){
   modal3.style.display = "block"
+  overlay.classList.add('active')
 };
 closeBtn3.onclick = function(){
   modal3.style.display = "none"
+  overlay.classList.remove('active')
 };
 window.onclick = function(e){
   if(event.target == modal){

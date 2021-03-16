@@ -666,6 +666,23 @@ p {
 	cursor: pointer;
 }
 
+#overlay {
+	position: fixed;
+	top: 0;
+	opacity: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(6px);
+	z-index: 40;
+	pointer-events: none;
+}
+
+#overlay.active {
+	opacity: 1;
+	pointer-events: all ;
+}
 
 
 .close:hover,
@@ -872,6 +889,9 @@ footer .flex-container {
 		justify-content: space-between;
 		padding: 0 5px;
 		width: 100%;
+	}
+	.logo p {
+		display: none;
 	}
 
 	.links a {
