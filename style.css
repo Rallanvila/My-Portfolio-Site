@@ -565,6 +565,18 @@ p {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
+.fb-modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
 .modal-content {
 	display: flex;
 	justify-content: center;
@@ -665,6 +677,15 @@ p {
 	background: none;
 	cursor: pointer;
 }
+.fb-close-btn {
+	position: relative;
+	left: 20%;
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	background: none;
+	cursor: pointer;
+}
 
 #overlay {
 	position: fixed;
@@ -715,110 +736,110 @@ footer .flex-container {
 
 @media only screen and (min-width: 651px) and (max-width: 850px) {
 
-  h2 {
-    font-size: 30px;
-  }
+	h2 {
+		font-size: 30px;
+	}
 
-  .html {
-    width: 850px;
-  }
-  nav {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .nav {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  .links  {
-    padding: 0;
-    margin: 0;
-  }
-  .headline h1 {
-    font-size: 42px;
-  }
-  .headline h5 {
-    font-size: 16px;
-  }
-  .headline {
-    display: flex;
-
-  }
-  .headline button {
-    padding: 5px 10px;
-    justify-content: flex-end;
-    align-self: flex-end;
-    width: auto;
-    /* float: right; */
-    border: none;
-    font-size: 16px;
-    opacity: 0.9;
-    cursor: pointer;
-    margin: auto;
-    /* border-radius: 10px; */
-  }
-  .headline a {
-    width: 110px
-  }
-  .about {
-    width: 800px;
-  };
-  section {
-    width: 800px;
-  }
-  #about {
-    width: 800px;
-    margin: auto
-  }
-
-  .about-myself {
-    width: 800px;
-  }
-  .about-myself p {
-    width: 750px;
-    text-align: center;
-    margin: auto
-  }
-  .what-i-do {
-    width: 100%;
-    flex-direction: column;
-  }
-  .nutshell {
-    width: 750px;
-  }
-  .nutbox {
-    width: 750px;
-  }
-  .nutbox2 {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-  }
-  .competencies {
-    align-self: center;
-  }
-  .competencies p {
-    padding-bottom: 40px;
-  }
-  .projects {
-    width: 100%;
-  }
-  .projects2 {
-    width: 100%;
-  }
-	.main-banner {
+	.html {
+		width: 850px;
+	}
+	nav {
+		margin: 0;
+		padding: 0;
 		width: 100%;
 	}
-  .skills {
-    width: 90%;
-  }
-  .skills .fab {
-    font-size: 60px;
-  }
+	.nav {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.links  {
+		padding: 0;
+		margin: 0;
+	}
+	.headline h1 {
+		font-size: 42px;
+	}
+	.headline h5 {
+		font-size: 16px;
+	}
+	.headline {
+		display: flex;
+
+	}
+	.headline button {
+		padding: 5px 10px;
+		justify-content: flex-end;
+		align-self: flex-end;
+		width: auto;
+		/* float: right; */
+		border: none;
+		font-size: 16px;
+		opacity: 0.9;
+		cursor: pointer;
+		margin: auto;
+		/* border-radius: 10px; */
+	}
+	.headline a {
+		width: 110px
+	}
+	.about {
+		width: 800px;
+	};
+	section {
+		width: 800px;
+	}
+	#about {
+		width: 800px;
+		margin: auto
+	}
+
+	.about-myself {
+		width: 800px;
+	}
+	.about-myself p {
+		width: 750px;
+		text-align: center;
+		margin: auto
+	}
+	.what-i-do {
+		width: 100%;
+		flex-direction: column;
+	}
+	.nutshell {
+		width: 750px;
+	}
+	.nutbox {
+		width: 750px;
+	}
+	.nutbox2 {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+		text-align: center;
+	}
+	.competencies {
+		align-self: center;
+	}
+	.competencies p {
+		padding-bottom: 40px;
+	}
+	.projects {
+		width: 100%;
+	}
+	.projects2 {
+		width: 100%;
+	}
+		.main-banner {
+			width: 100%;
+		}
+	.skills {
+		width: 90%;
+	}
+	.skills .fab {
+		font-size: 60px;
+	}
 	.about {
 		width: 850px;
 	}
@@ -950,202 +971,202 @@ footer .flex-container {
 		padding: 0;
 		justify-content: center;
 		text-align: center;
-  }
-  
-  .headline button {
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-  }
-
-  .headline a{
-    justify-content: center;
-    align-self: center;
-  }
-
-	.contact-button button {
-		float: none;
 	}
-	/* ----------about--------------- */
-.about {
-	width: 100%;
-	margin: 10px 5px;
-}
+	
+	.headline button {
+		text-align: center;
+		justify-content: center;
+		align-self: center;
+	}
 
-.about p {
-	width: 90%;
-	margin: auto;
-}
-/* ------------what-i-do------------ */
-.headline {
-	top: 20vh;
-}
+	.headline a{
+		justify-content: center;
+		align-self: center;
+	}
 
-.nutshell {
-	width: 100%;
-	flex-direction: column;
-	padding: 0 auto 30px auto;
-	height: 300px;
-}
+		.contact-button button {
+			float: none;
+		}
+		/* ----------about--------------- */
+	.about {
+		width: 100%;
+		margin: 10px 5px;
+	}
 
-.nutshell img {
-	height: 80px;
-}
+	.about p {
+		width: 90%;
+		margin: auto;
+	}
+	/* ------------what-i-do------------ */
+	.headline {
+		top: 20vh;
+	}
 
-.what-i-do {
-	width: 100%;
-	margin-top: 0px;
-	display: block;
-	height: auto;
-	background-color: white;
-}
+	.nutshell {
+		width: 100%;
+		flex-direction: column;
+		padding: 0 auto 30px auto;
+		height: 300px;
+	}
 
-.nutbox2 {
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-}
+	.nutshell img {
+		height: 80px;
+	}
 
-.nutbox2 p {
-	width: 90%;
-	margin: auto;
-	padding-bottom: 50px;
-}
+	.what-i-do {
+		width: 100%;
+		margin-top: 0px;
+		display: block;
+		height: auto;
+		background-color: white;
+	}
 
-.fab {
-	font-size: 50px;
-}
-.experience {
-	text-align: center;
-	height: auto;
-	width: 100%;
-	background-color: rgba(196, 196, 196, 26%);
-}
+	.nutbox2 {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
 
-.experience h2 {
-	padding: 20px;
-}
-/* --------experience----------- */
-.experience p {
-	width: 90%;
-	text-align: center;
-	margin: 0 auto;
-	padding: 50px auto 30px auto;
-}
+	.nutbox2 p {
+		width: 90%;
+		margin: auto;
+		padding-bottom: 50px;
+	}
 
-.skills {
-	text-align: center;
-	justify-content: space-evenly;
-	height: auto;
-	width: auto;
-	padding-bottom: 30px;
-}
+	.fab {
+		font-size: 50px;
+	}
+	.experience {
+		text-align: center;
+		height: auto;
+		width: 100%;
+		background-color: rgba(196, 196, 196, 26%);
+	}
 
-.skills .fab {
-	font-size: 50px;
-}
+	.experience h2 {
+		padding: 20px;
+	}
+	/* --------experience----------- */
+	.experience p {
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 50px auto 30px auto;
+	}
 
-/* ----------what-ive-done--------- */
-.projects {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: auto;
-}
+	.skills {
+		text-align: center;
+		justify-content: space-evenly;
+		height: auto;
+		width: auto;
+		padding-bottom: 30px;
+	}
 
-.projects2 {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: auto;
-}
+	.skills .fab {
+		font-size: 50px;
+	}
 
-.project {
-	width: 95%;
-	height: 200px;
-	padding: 30px 0;
-	margin: 30px auto 30px auto;
-}
+	/* ----------what-ive-done--------- */
+	.projects {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
 
-#hide {
-	display: none;
-}
+	.projects2 {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
 
-.fab,
-.fas {
-	font-size: 25px;
-}
-.modal-content {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-self: center;
-	flex-direction: column;
-	width: 350px;
-	margin: auto;
-	border: 1px solid rgba(0, 0, 0, 0.262);
-	background-color: rgba(216, 216, 216);
-	box-shadow: rgba(0, 0, 0, 0.173) 2px 2px 2px;
-	border-radius: 15px;
-	z-index: 50;
-}
+	.project {
+		width: 95%;
+		height: 200px;
+		padding: 30px 0;
+		margin: 30px auto 30px auto;
+	}
 
-.modal-content h2 {
-	font-size: 24px;
-}
-.kim-modal, .sushi-modal, .medical-modal {
-	display: none;
-	position: fixed;
-	width: 350px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin: auto;
-	z-index: 50;
-	background-color: rgba(0, 0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.4);
-	height: 550px;
-	overflow-y: auto;
-}
-.container {
-	width: 100%;
-}
+	#hide {
+		display: none;
+	}
 
-.container p {
-	width: 90%;
-}
-.close-btn {
-	position: relative;
-	left: 7%;
-	background-color: white;
-	border: none;
-	font-size: 30px;
-	background: none;
-	cursor: pointer;
-}
-.sushi-close-btn {
-	position: relative;
-	left: 29%;
-	background-color: white;
-	border: none;
-	font-size: 30px;
-	background: none;
-	cursor: pointer;
-}
-.medical-close-btn {
-	position: relative;
-	left: 7%;
-	background-color: white;
-	border: none;
-	font-size: 30px;
-	background: none;
-	cursor: pointer;
-}
+	.fab,
+	.fas {
+		font-size: 25px;
+	}
+	.modal-content {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-self: center;
+		flex-direction: column;
+		width: 350px;
+		margin: auto;
+		border: 1px solid rgba(0, 0, 0, 0.262);
+		background-color: rgba(216, 216, 216);
+		box-shadow: rgba(0, 0, 0, 0.173) 2px 2px 2px;
+		border-radius: 15px;
+		z-index: 50;
+	}
+
+	.modal-content h2 {
+		font-size: 24px;
+	}
+	.kim-modal, .sushi-modal, .medical-modal {
+		display: none;
+		position: fixed;
+		width: 350px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		z-index: 50;
+		background-color: rgba(0, 0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		height: 550px;
+		overflow-y: auto;
+	}
+	.container {
+		width: 100%;
+	}
+
+	.container p {
+		width: 90%;
+	}
+	.close-btn {
+		position: relative;
+		left: 7%;
+		background-color: white;
+		border: none;
+		font-size: 30px;
+		background: none;
+		cursor: pointer;
+	}
+	.sushi-close-btn {
+		position: relative;
+		left: 29%;
+		background-color: white;
+		border: none;
+		font-size: 30px;
+		background: none;
+		cursor: pointer;
+	}
+	.medical-close-btn {
+		position: relative;
+		left: 7%;
+		background-color: white;
+		border: none;
+		font-size: 30px;
+		background: none;
+		cursor: pointer;
+	}
 )
 

@@ -144,3 +144,19 @@ window.onclick = function(e){
     modal3.style.display = "none"
   }
 };
+let modalBtn4 = document.getElementById("fb-btn");
+let modal4 = document.querySelector(".fb-modal");
+let closeBtn4 = document.querySelector(".fb-close-btn");
+modalBtn4.onclick = function(){
+  modal4.style.display = "block"
+  overlay.classList.add('active')
+};
+closeBtn4.onclick = function(){
+  modal4.style.display = "none"
+  overlay.classList.remove('active')
+};
+window.onclick = function(e){
+  if(event.target == modal){
+    modal4.style.display = "none"
+  }
+};
