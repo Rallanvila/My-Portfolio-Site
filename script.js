@@ -1,9 +1,9 @@
-gsap.to(".headline-animation", {
+gsap.to(".main-banner__headline--animation", {
     duration: 3, 
     ease: "back",
 })
 
-gsap.from(".headline-animation", {
+gsap.from(".main-banner__headline--animation", {
     opacity: 0, 
     duration: 2,
     y: -300,
@@ -17,7 +17,7 @@ gsap.from(".webdev", {
     ease: 'back',
 })
 
-gsap.from(".contact-button", {
+gsap.from(".main-banner__headline--contact-btn", {
     opacity: 0, 
     delay: 3,
     duration: 2,

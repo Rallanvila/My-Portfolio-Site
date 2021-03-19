@@ -104,15 +104,6 @@ li a {
 	opacity: 1;
 }
 
-.button {
-	padding: 10px 15px;
-	border: none;
-	align-self: center;
-	font-style: bold;
-	opacity: 0.9;
-	cursor: pointer;
-}
-
 /* --------Banner---------- */
 .main-banner {
 	width: 100%;
@@ -123,51 +114,9 @@ li a {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	position: relative;
 }
-
-.headline {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	color: rgba(247, 239, 239, 0.975);
-	left: 30vh;
-	top: 35vh;
-}
-
-.headline p {
-	text-align: center;
-	justify-content: flex-end;
-}
-
-.contact-button {
-	margin: 50px 0 0 0;
-	justify-content: flex-end;
-	border: none;
-	width: 135px;
-	font-size: 36px;
-	opacity: 0.9;
-}
-
-.headline button {
-	padding: 10px 15px;
-	justify-content: flex-end;
-	align-self: flex-end;
-	width: auto;
-	/* float: right; */
-	border: none;
-	font-size: 24px;
-	opacity: 0.9;
-	cursor: pointer;
-	margin: auto;
-	/* border-radius: 10px; */
-}
-
-.headline a {
-	width: 154px;
-	align-self: flex-end;
-}
-
-.main-banner-overlay {
+.main-banner__overlay {
 	width: 100%;
 	height: 80vh;
 	background: #000;
@@ -177,6 +126,38 @@ li a {
 	background-position: center;
 	background-attachment: fixed;
 }
+.main-banner__headline {
+	position: relative;
+	display: flex;
+	height: 200px;
+	flex-direction: column;
+	color: rgba(247, 239, 239, 0.975);
+	left: 30vh;
+	top: 35vh;
+}
+
+.main-banner__headline--contact-btn{
+	font-size: 1rem;
+	padding: 1rem 1.4rem;
+	border-radius: 25px;
+	border: none;
+	color: black;
+	transition: all .3s ease-in-out;
+	justify-self: flex-end;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.main-banner__headline--contact-btn:hover{
+	padding: 1.2rem 1.7rem;
+}
+.main-banner__headline--contact-btn-link{
+	color: black;
+	text-decoration: none;
+	opacity: .8;
+	transition: all .3s ease-in-out;
+}
+
 /* ---------About--------- */
 
 .about {
@@ -314,49 +295,42 @@ li a {
 	text-align: center;
 	margin: 50px auto;
 }
-
 .experience p {
 	width: 619px;
 	text-align: center;
 	margin: auto;
 }
-
-.skills {
+.experience__skills {
 	text-align: center;
 	justify-content: space-between;
 	margin: 50px auto;
 	width: 1250px;
 }
-
-.skills .fab {
+.experience__skills .fab {
 	font-size: 90px;
 	color: rgba(0, 0, 0, 90%);
 }
-
+.fab{
+	transition: color .4s ease-in-out;
+}
 .fa-react:hover {
 	color: rgba(96, 218, 251, 100%);
 }
-
 .fa-html5:hover {
 	color: rgba(229, 90, 35, 100%);
 }
-
 .fa-js-square:hover {
 	color: rgba(247, 223, 31, 100%);
 }
-
 .fa-css3-alt:hover {
 	color: rgba(37, 76, 228, 100%);
 }
-
 .fa-node-js:hover {
 	color: rgba(89, 150, 86, 100%);
 }
-
 .fa-github:hover {
 	color: #6a2b86;
 }
-
 .fa-figma:hover {
 	color: #f96e60;
 }
@@ -404,7 +378,6 @@ p {
 	transition: all .3s ease-in-out;
 }
 .resume__btn:hover{
-	/* padding: 1.3rem 1.7rem; */
 	font-size: 1.2rem;
 }
 .resume__btn--link{
@@ -549,7 +522,6 @@ p {
 	background-color: rgba(0, 0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.4);
 }
-
 .sushi-modal {
 	display: none;
 	position: fixed;
@@ -562,7 +534,6 @@ p {
 	background-color: rgba(0, 0, 0, 0.4);
 	
 }
-
 .medical-modal {
 	display: none;
 	position: fixed;
@@ -586,7 +557,6 @@ p {
 	background-color: rgba(0, 0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.4);
 }
-
 .modal-content {
 	display: flex;
 	justify-content: center;
@@ -601,7 +571,6 @@ p {
 	border-radius: 15px;
 	z-index: 50;
 }
-
 .modal-content h2{
 	font-size: 36px;
 }
@@ -609,7 +578,6 @@ p {
 	font-size: 24px;
 	padding: 0 0 10px 0;
 }
-
 .container {
 	display: flex;
 	justify-content: center;
@@ -767,17 +735,17 @@ footer .flex-container {
 		padding: 0;
 		margin: 0;
 	}
-	.headline h1 {
+	.main-banner__headline h1 {
 		font-size: 42px;
 	}
-	.headline h5 {
+	.main-banner__headline h5 {
 		font-size: 16px;
 	}
-	.headline {
+	.main-banner__headline {
 		display: flex;
 
 	}
-	.headline button {
+	.main-banner__headline button {
 		padding: 5px 10px;
 		justify-content: flex-end;
 		align-self: flex-end;
@@ -790,7 +758,7 @@ footer .flex-container {
 		margin: auto;
 		/* border-radius: 10px; */
 	}
-	.headline a {
+	.main-banner__headline a {
 		width: 110px
 	}
 	.about {
@@ -844,10 +812,10 @@ footer .flex-container {
 		.main-banner {
 			width: 100%;
 		}
-	.skills {
+	.experience__skills {
 		width: 90%;
 	}
-	.skills .fab {
+	.experience__skills .fab {
 		font-size: 60px;
 	}
 	.about {
@@ -915,7 +883,7 @@ footer .flex-container {
 	}
 }
 
-@media only screen and (min-width: 350px) and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
 	nav {
 		justify-content: space-between;
 		padding: 0 5px;
@@ -972,29 +940,27 @@ footer .flex-container {
 		height: 80vh;
 		/* background-image: url(./Images/Banner4.jpg); */
 		background-size: cover;
-		background-repeat: no-repeat;
 		background-position: bottom center;
-		background-attachment: fixed;
+		position: relative;
 	}
-	.headline {
+	.main-banner__headline {
 		left: 0;
 		padding: 0;
 		justify-content: center;
 		text-align: center;
 	}
 	
-	.headline button {
-		text-align: center;
+	.main-banner__headline--contact-btn{
+		bottom: -110px;
+		right: 32%;
+	}
+
+	.main-banner__headline a{
 		justify-content: center;
 		align-self: center;
 	}
 
-	.headline a{
-		justify-content: center;
-		align-self: center;
-	}
-
-		.contact-button button {
+		.main-banner__headline--contact-btn {
 			float: none;
 		}
 		/* ----------about--------------- */
@@ -1008,7 +974,7 @@ footer .flex-container {
 		margin: auto;
 	}
 	/* ------------what-i-do------------ */
-	.headline {
+	.main-banner__headline {
 		top: 20vh;
 	}
 
@@ -1066,7 +1032,7 @@ footer .flex-container {
 		padding: 50px auto 30px auto;
 	}
 
-	.skills {
+	.experience__skills {
 		text-align: center;
 		justify-content: space-evenly;
 		height: auto;
@@ -1074,7 +1040,7 @@ footer .flex-container {
 		padding-bottom: 30px;
 	}
 
-	.skills .fab {
+	.experience__skills .fab {
 		font-size: 50px;
 	}
 
