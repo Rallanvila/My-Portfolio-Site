@@ -334,6 +334,9 @@ li a {
 .fa-figma:hover {
 	color: #f96e60;
 }
+.fa-sass:hover{
+	color: #AA4274;
+}
 
 /* ---------Resume----------- */
 .resume {
@@ -375,7 +378,7 @@ p {
 	border-radius: 25px;
 	border: none;
 	color: black;
-	transition: all .3s ease-in-out;
+	transition: all .1s ease-in-out;
 }
 .resume__btn:hover{
 	font-size: 1.2rem;
